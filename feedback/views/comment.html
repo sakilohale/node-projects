@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="\public\css\comment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="header">
+评论
+</div>
+<!--表单的action即为生成的url（黑重要，要拿来判断）-->
+<form action="/pinglun" method="get">
+
+<div class="pinglun">  
+<div class="name">
+    你的大名：   
+<input type="text" name="name" style="width:250px;height: 50px;font-size: 15px;border: 1px lightgray solid; border-radius: 30px; caret-color: lightsteelblue;padding: 10px;">
+</div>
+
+<div class="content">
+    说点什么： 
+    <input type="text" name="words"  style="width:500px;height: 50px;font-size: 15px; border: 1px lightgray solid; border-radius: 30px;caret-color: lightsteelblue;padding: 10px;">
+</div>
+
+<div class="button">
+    <input type="submit" value="上交！" style="color: white;font-size: 15px; background-color: black; border: none;">
+</div>
+
+
+</div>
+</form>
+
+
+</body>
+</html>

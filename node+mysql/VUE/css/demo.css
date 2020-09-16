@@ -1,0 +1,115 @@
+html,body{
+width: 100%;
+height: 100%;
+
+}
+body{
+    font-family: "华文细黑";
+  background: url('./tu/teacher.gif') no-repeat;
+    background-size: 100%;
+  }
+  
+  
+  .lover1{
+   position: absolute;
+   top: -90px;
+   width: 125px;
+   height: 90px;
+   border-radius: 30px;
+   background-image: url('./tu/心.png');
+   background-size: 100%;
+   text-align: center;
+   line-height: 120px;
+   color: white;
+  font-size:15px;
+
+  }
+  .lover2{
+    position: absolute;
+    top:-90px;
+    left: 180px;
+    width: 125px;
+    height: 90px;
+    border-radius: 30px;
+    background-image: url('./tu/心.png');
+    background-size: 100%;
+    text-align: center;
+    line-height: 120px;
+    color: white;
+   font-size:15px;
+ 
+   }
+  .xin{
+    position: absolute;
+    left:600px;
+    top:400px; 
+
+  }
+  .day{
+   position: absolute;
+  
+   left: 100px;
+   top:100px;
+  }
+  .dayborad{
+
+   height:50px;
+   
+   text-align: center;
+   line-height: 50px;
+   font-size: 20px;
+   color:#780206;
+  }
+  .write{
+   
+ width:300px;
+ height: 200px;
+ border-radius: 30px;
+ background: #ff9966;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ position: absolute;
+ left:600px;
+ top:400px; 
+ font-size: 15px;
+ 
+  }
+  .letterbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left:1000px;
+    top:500px;
+
+  }
+  .letter{
+    display: none;
+    position: absolute;
+    left:600px;
+    top:180px; 
+    width: 280px;
+    height: 500px;
+    padding: 40px;
+    background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  .quit{
+   
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   left:300px ;
+   top:10px
+  }
+  .content{
+   width: 100%;
+   height: 25px;
+   
+   border-bottom:1px black solid;
+   margin: auto;
+   margin-top: 20px;
+  }

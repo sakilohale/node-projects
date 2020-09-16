@@ -1,0 +1,11 @@
+{
+    "emmet.excludeLanguages": [
+
+        "markdown",
+       
+    ],
+
+    "editor.tokenColorCustomizations": {
+        "comments": "#FFB6C1" // 注释
+      }
+}

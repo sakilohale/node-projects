@@ -1,0 +1,52 @@
+body{
+background-color: 	#F0F8FF;
+
+}
+
+.header{
+
+margin-left: 200px;
+margin-right: 200px;
+height: 150px;
+width: 1000px;
+text-align: left;
+font-size: 80px;
+font-style: normal;
+color: black;
+
+}
+
+.button{
+ width: 100px;
+ height: 40px;
+ margin-left: 200px;
+ background-color:black;
+ text-align: center;
+ line-height: 40px;
+}
+
+.comment{
+margin-top: 25px;
+margin-left: 200px;
+margin-right: 200px;
+width: 1000px;
+border: 1px  lightgray solid;
+box-shadow:  8px 8px 16px #b5b5b5, 
+             -8px -8px 16px #ffffff;
+padding: 50px;
+
+
+}
+
+.comment_list{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px  	#008B8B solid;
+  text-align: left;
+  line-height: 50px;
+
+ 
+}

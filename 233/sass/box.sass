@@ -1,0 +1,29 @@
+
+
+
+$mycolor:red;
+
+
+
+.box{
+ display: grid;
+ width: 400px;
+ height: 400px;
+ grid-template-columns:repeat(3,33.3%);
+ grid-template-rows: repeat(3,33.3%);
+ gap: 10px;
+  .demobox0{
+          $mycolor:green;
+          width: 80px;
+         height: 80px;
+         background-color: $mycolor;
+         margin: auto;
+  }
+  .demobox{
+         width: 80px;
+         height: 80px;
+         background-color: $mycolor;
+         margin: auto;
+ }
+}
+

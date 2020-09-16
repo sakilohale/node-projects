@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="./css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div v-move id="out" class="login" @keyup.enter="login">
+        <div class="span">account</div>
+    <div class="ACC">
+ <input type="text" v-model="account" style="border: none; position: relative;; left: 10px;top:3px ">
+    </div>
+    <div class="span">passward</div>
+    <div class="PAS">
+        <input type="text" v-model="passward" style="border: none; position: relative;; left: 10px;top:3px ">
+    </div>
+	</div>
+</body>
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--axios接口-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	Vue.directive('move',function(a){
+		a.onmousedown=function(e){
+			var x=e.clientX-a.offsetLeft
+			var y=e.clientY-a.offsetTop
+			
+			
+			document.onmousemove=function(e){
+				var l=e.clientX-x;
+				var t=e.clientY-y;
+				
+				a.style.left=l+'px';
+				a.style.top=t+'px';
+			}
+			
+			document.onmouseup=function(){
+				document.onmousemove=null;
+				document.onmousedown=null;
+			}
+			
+		}
+	})
+	
+	
+	var vm=new Vue({
+        el:'#out',
+        data:{
+         account:'',
+         passward:''
+
+        },
+      
+        methods:{
+
+            login:function(){
+           
+            console.log("login")
+           axios.get('http://127.0.0.1:3000/login',{
+            params:{
+                account:this.account,
+                passward:this.passward
+            }
+           }).then(res=>{
+               console.log(res.data)
+               if(res.data==1){
+                window.location='index.html';
+               }
+           })
+
+        }
+
+    }
+
+
+	})
+
+
+
+
+</script>
+</html>

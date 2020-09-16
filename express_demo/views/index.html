@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--herf='服务器url地址路径'-->
+    <link type="text/css" rel="stylesheet" href="\public\css\main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="header">
+Exchange Ideas
+</div>
+<div class="button">
+<a href="./comment.html" style="text-decoration: none;color: white;">留言</a>
+</div>
+
+<div class="comment">
+    <!--模板引擎   遍历语法-->
+{{each commentlist}}
+<div class="comment_list">
+{{$index+1}}. {{$value.name}} : {{$value.words}}
+</div>
+{{/each}}
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+<!--src是服务器url地址路径-->
+<script src="\public\js\main.js"></script>
+</html>
